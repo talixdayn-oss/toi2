@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FBF9F6;
+    color: #2C3E35; /* Благородный темный оттенок */
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 88%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Красивые Премиум Заголовки */
+.section-title-dark {
+    font-family: 'Cormorant Garamond', serif;
+    color: #0B4227;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.section-title-light {
+    font-family: 'Cormorant Garamond', serif;
+    color: #D4A373;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+/* 1. Главный экран */
+.hero-section {
+    height: 100vh;
+    background-color: #0B4227;
+    background-image: radial-gradient(rgba(212, 163, 115, 0.12) 1px, transparent 0);
+    background-size: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.monogram {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #D4A373;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.couple-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.and-symbol {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #D4A373;
+}
+
+.wedding-title {
+    font-size: 0.95rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #E2D4C5;
+    margin-bottom: 50px;
+}
+
+.gold-btn {
+    background: linear-gradient(135deg, #D4A373 0%, #B8864B 100%);
+    border: none;
+    padding: 15px 40px;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(212, 163, 115, 0.4);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #D4A373;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* 2. Текст приглашения */
+.invitation-text-section {
+    text-align: center;
+    background-color: #FBF9F6;
+}
+
+.ornament {
+    color: #D4A373;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.main-invite-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #4A5A51;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hosts-box {
+    margin-top: 35px;
+    border-top: 1px solid #EAE3D8;
+    padding-top: 25px;
+}
+
+.hosts-label {
+    font-size: 0.85rem;
+    color: #B8864B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.hosts-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0B4227;
+    font-weight: 600;
+}
+
+/* 3. Модная фотогалерея */
+.gallery-section {
+    background-color: #FBF9F6;
+    padding-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    height: 200px;
+}
+
+.gallery-item.rows-2 {
+    grid-column: span 2;
+    height: 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* 4. Блок тоя и Календарь */
+.details-section {
+    background-color: #0B4227;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+}
+
+.date-time-box {
+    margin-bottom: 35px;
+}
+
+.date-time-box .date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #D4A373;
+    margin-bottom: 8px;
+}
+
+.date-time-box .time {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #E2D4C5;
+}
+
+.calendar-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 163, 115, 0.25);
+    padding: 25px 20px;
+    border-radius: 24px;
+    margin-bottom: 40px;
+}
+
+.calendar-header {
+    font-size: 1.1rem;
+    color: #D4A373;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px 5px;
+}
+
+.day-name {
+    font-size: 0.8rem;
+    color: #B8864B;
+    font-weight: 600;
+}
+
+.day {
+    font-size: 0.95rem;
+    color: #E2D4C5;
+}
+
+.wedding-day {
+    background-color: #D4A373;
+    color: #0B4227;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(212, 163, 115, 0.7);
+}
+
+.location-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #D4A373;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.address-text {
+    font-size: 0.95rem;
+    color: #E2D4C5;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Кнопка 2GIS */
+.maps-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #D4A373;
+    padding: 14px 30px;
+    color: #D4A373;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.maps-btn:hover {
+    background-color: #D4A373;
+    color: #0B4227;
+}
+
+/* 5. Сауалнама (Форма) */
+.survey-section {
+    background-color: #FBF9F6;
+    border-radius: 40px 40px 0 0;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.survey-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #6E7E75;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label, .radio-group label, .guest-counter label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #B8864B;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #E3DBD0;
+    background-color: #ffffff;
+    border-radius: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    color: #2C3E35;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #0B4227;
+}
+
+/* Радио переключатели */
+.radio-label {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #E3DBD0;
+    padding: 15px 20px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.radio-label input {
+    margin-right: 15px;
+    accent-color: #0B4227;
+}
+
+.radio-label span {
+    font-size: 0.95rem;
+    color: #2C3E35;
+}
+
+/* Плюс-Минус контроллер */
+.counter-control {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #E3DBD0;
+    width: 150px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.counter-control button {
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #0B4227;
+}
+
+.counter-control input {
+    width: 60px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0B4227;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #0B4227 0%, #052414 100%);
+    color: #ffffff;
+    border: none;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(11, 66, 39, 0.25);
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FBF9F6;
+    color: #7E8E84;
+}
+
+.footer-heart {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Плавные анимации */
+.animate-fade {
+    opacity: 0;
+    animation: fadeIn 1.8s forwards;
+}
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: all 1s ease-out;
+}
+
+.animate-up.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
